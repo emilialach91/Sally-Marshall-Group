@@ -9,10 +9,16 @@
 
     &__bar {
         background-color: $pink;
-        height: 40px;
+        height: 30px;
+    }
+
+    &__container {
+        max-width: 1440px;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
     }
 
     &__info {
@@ -20,7 +26,7 @@
         font-size: 0.7rem;
         flex-direction: row;
         color: rgb(255, 219, 219);
-        margin: 15px;
+        margin: auto 15px;
         cursor:pointer
     }
 
@@ -32,6 +38,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 50px;
     }
 
     &__logo {
@@ -42,6 +49,19 @@
         background-position: center;
         background-repeat: no-repeat;
         margin-right: 15px;
+
+        @include extra-small {
+            margin: 0 auto;
+            width: 250px;
+        }
+
+        @include small {
+            width: 350px;
+        }
+
+        @include large {
+            width: 550px;
+        }
     }
 
     &__content {

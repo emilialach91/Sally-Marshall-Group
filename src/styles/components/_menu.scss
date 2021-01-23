@@ -6,7 +6,7 @@
         z-index: 10;
     }
     
-    &__menu {
+    &__symbol {
         display: flex;
         width: 35px;
         height: 30px;
@@ -24,20 +24,27 @@
         background-color: transparent;
     }
 
-    &__container {
+    &__line {
+        width: 100%;
+        height: 3px;
+        background-color: #111B47;
+        transition: .5s;
+    }
+
+    &__overlay {
         transition: transform 1s;
         transform: translateX(-100%);
         position: absolute;
-        top: 40px;
+        top: 30px;
         z-index: 5;
         width: 320px;
-        height: calc(100vh - 40px);
+        height: calc(100vh - 30px);
         background-color: $blue;
         transition: transform 0.5s;
     }
 
     &__list {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     &__item {
@@ -48,13 +55,6 @@
         cursor: pointer;
         border-bottom: 1px solid $pink;
     }
-}
-
-.line {
-    width: 100%;
-    height: 3px;
-    background-color: #111B47;
-    transition: .5s;
 }
 
 .change .line-1 {
@@ -74,7 +74,6 @@
     background-color: $grey;
     transition: transform 0.5s;
 }
-
 
 .active {
     transform: translateX(0%);

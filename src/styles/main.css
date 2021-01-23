@@ -8,7 +8,7 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-.conteiner {
+.main__container {
   max-width: 1440px;
   margin: auto;
 }
@@ -25,7 +25,12 @@ html {
 
 .hero__bar {
   background-color: #AA108C;
-  height: 40px;
+  height: 30px;
+}
+
+.hero__container {
+  max-width: 1440px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +41,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: auto;
 }
 
 .hero__info {
@@ -48,7 +54,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
   color: #ffdbdb;
-  margin: 15px;
+  margin: auto 15px;
   cursor: pointer;
 }
 
@@ -67,6 +73,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 50px;
 }
 
 .hero__logo {
@@ -77,6 +84,25 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 15px;
+}
+
+@media (min-width: 400px) {
+  .hero__logo {
+    margin: 0 auto;
+    width: 250px;
+  }
+}
+
+@media (min-width: 540px) {
+  .hero__logo {
+    width: 350px;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero__logo {
+    width: 550px;
+  }
 }
 
 .hero__content {
@@ -164,7 +190,7 @@ html {
   z-index: 10;
 }
 
-.menu__menu {
+.menu__symbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,7 +214,15 @@ html {
   background-color: transparent;
 }
 
-.menu__container {
+.menu__line {
+  width: 100%;
+  height: 3px;
+  background-color: #111B47;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.menu__overlay {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -196,10 +230,10 @@ html {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   position: absolute;
-  top: 40px;
+  top: 30px;
   z-index: 5;
   width: 320px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 30px);
   background-color: #012D6A;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -208,7 +242,7 @@ html {
 }
 
 .menu__list {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .menu__item {
@@ -218,14 +252,6 @@ html {
   color: #F4F4F4;
   cursor: pointer;
   border-bottom: 1px solid #AA108C;
-}
-
-.line {
-  width: 100%;
-  height: 3px;
-  background-color: #111B47;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .change .line-1 {

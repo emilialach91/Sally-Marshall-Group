@@ -4,4 +4,25 @@ $teal: #329BB9;
 $blue: #012D6A;
 $grey: #F4F4F4;
 $white: #f5e6e6;
+
+$extra-small: 400px;
+@mixin extra-small {
+    @media (min-width: #{$extra-small}) {
+        @content;
+    }
+}
+
+$small: 540px;
+@mixin small {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+$large: 960px;
+@mixin large {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
     
