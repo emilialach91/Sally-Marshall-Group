@@ -38,9 +38,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: auto;
 }
 
@@ -147,6 +144,7 @@ html {
 
 .underline--reverse {
   background-color: #AA108C;
+  margin: 30px auto;
 }
 
 .bounce {
@@ -306,7 +304,6 @@ html {
   position: relative;
   background: #359EBC;
   overflow: hidden;
-  color: #f5e6e6;
 }
 
 .info--reverse {
@@ -319,6 +316,7 @@ html {
   max-width: 650px;
   margin: 40px auto;
   text-align: center;
+  color: #f5e6e6;
 }
 
 .info__content--reverse {
@@ -328,6 +326,11 @@ html {
 .info__title {
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.info__title--reverse {
+  color: #AA108C;
+  text-align: center;
 }
 
 .info__description {
@@ -340,6 +343,7 @@ html {
 .info__description--extra {
   font-style: normal;
   font-size: 0.8rem;
+  margin: 0 15px;
 }
 
 .tile {
@@ -374,7 +378,6 @@ html {
 
 .tile__container {
   max-width: 400px;
-  height: 250px;
   position: relative;
   margin: 10px;
 }
@@ -392,7 +395,7 @@ html {
 }
 
 .tile__container--courses:before {
-  background-image: url("./images/pexels-photo2.jpg");
+  background-image: url("./images/pexels-photo.jpg");
 }
 
 .tile__container--book:before {
@@ -461,7 +464,6 @@ html {
 }
 
 .carousel {
-  width: 100%;
   background-color: #329BB9;
   padding-bottom: 10px;
 }
@@ -471,7 +473,7 @@ html {
 }
 
 .carousel-inner {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -483,5 +485,106 @@ html {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+.multiCarousel {
+  background-color: #F4F4F4;
+  margin-top: 40px;
+}
+
+.multiCarousel__item {
+  max-width: 280px;
+  height: 400px;
+  border: .5px solid #D6D3E2;
+  background-color: white;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: justify;
+}
+
+.multiCarousel__image {
+  width: 100%;
+  height: 35%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.multiCarousel__image--courses {
+  background-image: url("./images/pexels-photo.jpg");
+}
+
+.multiCarousel__image--book {
+  background-image: url("./images/rawpixel.jpg");
+}
+
+.multiCarousel__image--steer {
+  background-image: url("./images/maximilian-weisbecker.jpg");
+}
+
+.multiCarousel__image--board {
+  background-image: url("./images/bay-beach-blue.jpg");
+}
+
+.multiCarousel__image--tide {
+  background-image: url("./images/yoann-boyer.jpg");
+}
+
+.multiCarousel__date {
+  width: 130px;
+  height: 25px;
+  text-align: center;
+  background-color: #329BB9;
+  position: absolute;
+  top: 0;
+  right: calc(50% - 60px);
+  color: #f5e6e6;
+}
+
+.multiCarousel__title {
+  color: #AA108C;
+  margin-left: 15px;
+}
+
+.multiCarousel__button {
+  display: block;
+  background-color: #AA108C;
+  font-weight: 300;
+  font-size: .9rem;
+  color: #f5e6e6;
+  width: 150px;
+  height: 30px;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: calc(50% - 80px);
+}
+
+.slick-dots li {
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  color: black;
+  opacity: 1;
+  font-size: 13px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #AA108C;
+  border-radius: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
     position: relative;
     background: #359EBC;
     overflow: hidden;
-    color: $white;
 
         &--reverse {
             background: $grey;
@@ -14,6 +13,7 @@
         max-width: 650px;
         margin: 40px auto;
         text-align: center;
+        color: $white;
 
         &--reverse {
             color: $pink;
@@ -23,6 +23,11 @@
     &__title {
        font-weight: 400; 
        letter-spacing: 1px;
+
+       &--reverse {
+           color: $pink;
+           text-align: center;
+       }
     }
 
     &__description {
@@ -34,6 +39,7 @@
         &--extra {
             font-style: normal;
             font-size: 0.8rem;
+            margin: 0 15px;
         }
     }
     

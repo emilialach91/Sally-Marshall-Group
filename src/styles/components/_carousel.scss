@@ -1,5 +1,4 @@
 .carousel {
-    width: 100%;
     background-color: $teal;
     padding-bottom: 10px;
 }
@@ -10,7 +9,7 @@
 
 
 .carousel-inner {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -23,3 +22,8 @@
     height: 10px;
     border-radius: 50%;
 }
+
+
+
+
+

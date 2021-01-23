@@ -14,7 +14,6 @@
 
     &__container {
         max-width: 400px;
-        height: 250px;
         position: relative;
         margin: 10px;
 
@@ -31,7 +30,7 @@
         }
 
         &--courses:before {
-            background-image: url('./images/pexels-photo2.jpg');
+            background-image: url('./images/pexels-photo.jpg');
         }
 
         &--book:before {

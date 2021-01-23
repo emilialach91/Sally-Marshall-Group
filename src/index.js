@@ -1,27 +1,58 @@
 import './styles/main.scss';
-// import './style/reset/reset.css';
-
-// const button = document.querySelector('.hero__invitation');
-// const element = document.querySelector('.project__surf');
-
-// button.addEventListener('click', function () {
-//     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-// });
 
 
+const element = document.querySelector('.info');
+const button = document.querySelector('.bounce');
 const menu = document.querySelector('.menu__hamburger');
 const navbar = document.querySelector ('.menu__navbar');
-// const navList= document.querySelector('.navList ul')
 const overlay = document.getElementById("menu__overlay");
-
-// navList.addEventListener('click', () => {
-//     navbar.classList.toggle("change")
-//     overlay.classList.toggle("active")
-// });
 
 menu.addEventListener('click', () => {
     navbar.classList.toggle("change")
     overlay.classList.toggle("active")
 });
 
+button.addEventListener('click', function () {
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+});
 
+
+$('.multiCarousel__content').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 4,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3,
+        }
+      },
+
+      {
+        breakpoint: 720,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+  
