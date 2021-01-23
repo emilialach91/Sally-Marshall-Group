@@ -9,6 +9,19 @@ import './styles/main.scss';
 // });
 
 
+const menu = document.querySelector('.menu__hamburger');
+const navbar = document.querySelector ('.menu__navbar');
+// const navList= document.querySelector('.navList ul')
+const navListContainer = document.getElementById("menu__container");
 
+// navList.addEventListener('click', () => {
+//     navbar.classList.toggle("change")
+//     navListContainer.classList.toggle("active")
+// });
+
+menu.addEventListener('click', () => {
+    navbar.classList.toggle("change")
+    navListContainer.classList.toggle("active")
+});
 
 

@@ -1,0 +1,105 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/frank-mckenna.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__bar {
+        background-color: $pink;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        font-size: 0.7rem;
+        flex-direction: row;
+        color: rgb(255, 219, 219);
+        margin: 15px;
+        cursor:pointer
+    }
+
+    &__detail {
+        margin-left: 10px;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 180px;
+        height: 100px;
+        background-image: url("./images/Sally Marshall Group Logo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 15px;
+    }
+
+    &__content {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $blue;
+    }
+
+    &__description {
+        margin: 30px 10px 0 10px;
+        max-width: 350px;
+        line-height: 1.9;
+        text-align: center;
+        font-style: italic;
+    }
+
+   
+}
+
+.underline {
+    margin-top: 30px;
+    height: 1px;
+    width: 100px;
+    background-color: $blue;
+}
+
+.bounce{
+    font-size: 2rem;
+    color: $grey;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  } 
+  
+@-webkit-keyframes bounce {
+  0%, 100% {-webkit-transform: translateY(0);}
+  50% {-webkit-transform: translateY(-7px);}
+} 
+
+@keyframes bounce { 
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-7px);}
+} 

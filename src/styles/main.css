@@ -1,1 +1,268 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.conteiner {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/frank-mckenna.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero__bar {
+  background-color: #AA108C;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #ffdbdb;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.hero__detail {
+  margin-left: 10px;
+}
+
+.hero__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__logo {
+  width: 180px;
+  height: 100px;
+  background-image: url("./images/Sally Marshall Group Logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.hero__content {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #012D6A;
+}
+
+.hero__description {
+  margin: 30px 10px 0 10px;
+  max-width: 350px;
+  line-height: 1.9;
+  text-align: center;
+  font-style: italic;
+}
+
+.underline {
+  margin-top: 30px;
+  height: 1px;
+  width: 100px;
+  background-color: #012D6A;
+}
+
+.bounce {
+  font-size: 2rem;
+  color: #F4F4F4;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-7px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+}
+
+.menu__hamburger {
+  display: block;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.menu__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 5;
+  position: absolute;
+  margin-left: 15px;
+  padding-top: 30px;
+}
+
+.menu__navbar {
+  width: 100%;
+  background-color: transparent;
+}
+
+.menu__container {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  position: absolute;
+  top: 40px;
+  z-index: 5;
+  width: 320px;
+  height: calc(100vh - 40px);
+  background-color: #012D6A;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.menu__list {
+  margin-top: 100px;
+}
+
+.menu__item {
+  padding: 20px 0 20px 80px;
+  margin: 0 30px;
+  list-style: none;
+  color: #F4F4F4;
+  cursor: pointer;
+  border-bottom: 1px solid #AA108C;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #111B47;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.change .line-1 {
+  -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+  background-color: #F4F4F4;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.change .line-2 {
+  opacity: 0;
+  background-color: #F4F4F4;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.change .line-3 {
+  -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
+          transform: rotateZ(45deg) translate(-8px, -6px);
+  background-color: #F4F4F4;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+/*# sourceMappingURL=main.css.map */
