@@ -25,4 +25,11 @@ $large: 960px;
         @content;
     }
 }
+
+$extra-large: 1140px;
+@mixin extra-large {
+    @media (min-width: #{$extra-large}) {
+        @content;
+    }
+}
     

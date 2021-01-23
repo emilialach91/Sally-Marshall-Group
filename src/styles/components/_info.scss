@@ -6,7 +6,6 @@
 
         &--reverse {
             background: $grey;
-            color: $pink;
         }
     
     &__content {
@@ -15,6 +14,10 @@
         max-width: 650px;
         margin: 40px auto;
         text-align: center;
+
+        &--reverse {
+            color: $pink;
+        }
     }
 
     &__title {
@@ -36,16 +39,18 @@
     
 }
 
-.info:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.08;
-    background-image: url('./images/Star.svg');
-    background-repeat: no-repeat;
-    background-position: 120% 0;
-    background-size: contain;
-}
+// star background
+
+// .info:before {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     opacity: 0.08;
+//     background-image: url('./images/Star.svg');
+//     background-repeat: no-repeat;
+//     background-position: 100% 0;
+//     background-size: contain;
+// }

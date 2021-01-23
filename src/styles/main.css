@@ -311,7 +311,6 @@ html {
 
 .info--reverse {
   background: #F4F4F4;
-  color: #AA108C;
 }
 
 .info__content {
@@ -320,6 +319,10 @@ html {
   max-width: 650px;
   margin: 40px auto;
   text-align: center;
+}
+
+.info__content--reverse {
+  color: #AA108C;
 }
 
 .info__title {
@@ -339,17 +342,121 @@ html {
   font-size: 0.8rem;
 }
 
-.info:before {
+.tile {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 40px auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 960px) {
+  .tile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.tile__container {
+  max-width: 400px;
+  height: 250px;
+  position: relative;
+  margin: 10px;
+}
+
+.tile__container--courses, .tile__container--tide {
+  background-color: #012D6A;
+}
+
+.tile__container--book, .tile__container--steer {
+  background-color: #329BB9;
+}
+
+.tile__container--speaking, .tile__container--chat {
+  background-color: #AA108C;
+}
+
+.tile__container--courses:before {
+  background-image: url("./images/pexels-photo2.jpg");
+}
+
+.tile__container--book:before {
+  background-image: url("./images/blur-blurred-book.jpg");
+}
+
+.tile__container--speaking:before {
+  background-image: url("./images/armchairs-blur-business.jpg");
+}
+
+.tile__container--steer:before {
+  background-image: url("./images/maximilian-weisbecker.jpg");
+}
+
+.tile__container--chat:before {
+  background-image: url("./images/rawpixel.jpg");
+}
+
+.tile__container--tide:before {
+  background-image: url("./images/yoann-boyer.jpg");
+}
+
+@media (min-width: 1140px) {
+  .tile__container {
+    max-width: 300px;
+  }
+}
+
+.tile__container:before {
   content: ' ';
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.08;
-  background-image: url("./images/Star.svg");
+  opacity: 0.2;
   background-repeat: no-repeat;
-  background-position: 120% 0;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.tile__title {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.tile__logo {
+  margin-bottom: 15px;
+}
+
+.tile__content {
+  color: white;
+  padding: 30px 15px 30px 15px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.tile__underline {
+  margin-bottom: 20px;
+  height: 1px;
+  width: 40px;
+  background-color: #f5e6e6;
 }
 /*# sourceMappingURL=main.css.map */
