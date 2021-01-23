@@ -24,7 +24,7 @@ html {
 }
 
 .hero__bar {
-  background-color: #AA108C;
+  background-color: #aa108c;
   height: 30px;
 }
 
@@ -38,7 +38,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .hero__info {
@@ -46,17 +50,32 @@ html {
   display: -ms-flexbox;
   display: flex;
   font-size: 0.7rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  color: #ffdbdb;
+  color: #f5e6e6;
   margin: auto 15px;
   cursor: pointer;
 }
 
+@media (min-width: 540px) {
+  .hero__info {
+    margin: auto 60px;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero__info {
+    margin: auto 0 auto 150px;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero__info--envelope {
+    margin: auto 150px auto 0;
+  }
+}
+
 .hero__detail {
-  margin-left: 10px;
+  padding-left: 10px;
+  margin: 0;
 }
 
 .hero__main {
@@ -118,7 +137,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #012D6A;
+  color: #012d6a;
 }
 
 .hero__description {
@@ -134,7 +153,7 @@ html {
   margin: 30px 0;
   height: 1px;
   width: 100px;
-  background-color: #012D6A;
+  background-color: #012d6a;
 }
 
 .underline--info {
@@ -143,13 +162,13 @@ html {
 }
 
 .underline--reverse {
-  background-color: #AA108C;
+  background-color: #aa108c;
   margin: 30px auto;
 }
 
 .bounce {
   font-size: 2rem;
-  color: #F4F4F4;
+  color: #f4f4f4;
   cursor: pointer;
   position: absolute;
   left: 50%;
@@ -170,7 +189,8 @@ html {
 }
 
 @-webkit-keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
   }
   50% {
@@ -179,7 +199,8 @@ html {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -225,9 +246,9 @@ html {
 .menu__line {
   width: 100%;
   height: 3px;
-  background-color: #111B47;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background-color: #111b47;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu__overlay {
@@ -242,7 +263,7 @@ html {
   z-index: 5;
   width: 320px;
   height: calc(100vh - 30px);
-  background-color: #012D6A;
+  background-color: #012d6a;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -257,15 +278,15 @@ html {
   padding: 20px 0 20px 80px;
   margin: 0 30px;
   list-style: none;
-  color: #F4F4F4;
+  color: #f4f4f4;
   cursor: pointer;
-  border-bottom: 1px solid #AA108C;
+  border-bottom: 1px solid #aa108c;
 }
 
 .change .line-1 {
   -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
           transform: rotateZ(-45deg) translate(-8px, 6px);
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -274,7 +295,7 @@ html {
 
 .change .line-2 {
   opacity: 0;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -284,7 +305,7 @@ html {
 .change .line-3 {
   -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
           transform: rotateZ(45deg) translate(-8px, -6px);
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -302,12 +323,12 @@ html {
 
 .info {
   position: relative;
-  background: #359EBC;
+  background: #359ebc;
   overflow: hidden;
 }
 
 .info--reverse {
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .info__content {
@@ -320,7 +341,7 @@ html {
 }
 
 .info__content--reverse {
-  color: #AA108C;
+  color: #aa108c;
 }
 
 .info__title {
@@ -329,7 +350,7 @@ html {
 }
 
 .info__title--reverse {
-  color: #AA108C;
+  color: #aa108c;
   text-align: center;
 }
 
@@ -378,20 +399,21 @@ html {
 
 .tile__container {
   max-width: 400px;
+  height: 250px;
   position: relative;
   margin: 10px;
 }
 
 .tile__container--courses, .tile__container--tide {
-  background-color: #012D6A;
+  background-color: #012d6a;
 }
 
 .tile__container--book, .tile__container--steer {
-  background-color: #329BB9;
+  background-color: #329bb9;
 }
 
 .tile__container--speaking, .tile__container--chat {
-  background-color: #AA108C;
+  background-color: #aa108c;
 }
 
 .tile__container--courses:before {
@@ -425,7 +447,7 @@ html {
 }
 
 .tile__container:before {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   width: 100%;
@@ -464,7 +486,7 @@ html {
 }
 
 .carousel {
-  background-color: #329BB9;
+  background-color: #329bb9;
   padding-bottom: 10px;
 }
 
@@ -478,7 +500,7 @@ html {
 }
 
 .carousel-indicators .active {
-  background-color: #012D6A;
+  background-color: #012d6a;
 }
 
 .carousel-indicators li {
@@ -488,14 +510,14 @@ html {
 }
 
 .multiCarousel {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   margin-top: 40px;
 }
 
 .multiCarousel__item {
   max-width: 280px;
   height: 400px;
-  border: .5px solid #D6D3E2;
+  border: 0.5px solid #d6d3e2;
   background-color: white;
   margin: 10px;
   display: -webkit-box;
@@ -546,7 +568,7 @@ html {
   width: 130px;
   height: 25px;
   text-align: center;
-  background-color: #329BB9;
+  background-color: #329bb9;
   position: absolute;
   top: 0;
   right: calc(50% - 60px);
@@ -554,15 +576,15 @@ html {
 }
 
 .multiCarousel__title {
-  color: #AA108C;
+  color: #aa108c;
   margin-left: 15px;
 }
 
 .multiCarousel__button {
   display: block;
-  background-color: #AA108C;
+  background-color: #aa108c;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #f5e6e6;
   width: 150px;
   height: 30px;
@@ -584,7 +606,7 @@ html {
 }
 
 .slick-dots li.slick-active button:before {
-  color: #AA108C;
+  color: #aa108c;
   border-radius: 100%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,48 +1,47 @@
 .info {
+  position: relative;
+  background: #359ebc;
+  overflow: hidden;
+
+  &--reverse {
+    background: $grey;
+  }
+
+  &__content {
     position: relative;
-    background: #359EBC;
-    overflow: hidden;
+    z-index: 5;
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+    color: $white;
 
-        &--reverse {
-            background: $grey;
-        }
-    
-    &__content {
-        position: relative;
-        z-index: 5;
-        max-width: 650px;
-        margin: 40px auto;
-        text-align: center;
-        color: $white;
-
-        &--reverse {
-            color: $pink;
-        }
+    &--reverse {
+      color: $pink;
     }
+  }
 
-    &__title {
-       font-weight: 400; 
-       letter-spacing: 1px;
+  &__title {
+    font-weight: 400;
+    letter-spacing: 1px;
 
-       &--reverse {
-           color: $pink;
-           text-align: center;
-       }
+    &--reverse {
+      color: $pink;
+      text-align: center;
     }
+  }
 
-    &__description {
-        font-style: italic;
-        font-weight: 300;
-        line-height: 1.6;
-        margin: 0 15px;
+  &__description {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0 15px;
 
-        &--extra {
-            font-style: normal;
-            font-size: 0.8rem;
-            margin: 0 15px;
-        }
+    &--extra {
+      font-style: normal;
+      font-size: 0.8rem;
+      margin: 0 15px;
     }
-    
+  }
 }
 
 // star background

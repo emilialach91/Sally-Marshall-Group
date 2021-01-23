@@ -1,35 +1,41 @@
-$primary: 'Lato', sans-serif;
-$pink: #AA108C;
-$teal: #329BB9;
-$blue: #012D6A;
-$grey: #F4F4F4;
+$primary: "Lato", sans-serif;
+$pink: #aa108c;
+$teal: #329bb9;
+$blue: #012d6a;
+$grey: #f4f4f4;
 $white: #f5e6e6;
 
 $extra-small: 400px;
 @mixin extra-small {
-    @media (min-width: #{$extra-small}) {
-        @content;
-    }
+  @media (min-width: #{$extra-small}) {
+    @content;
+  }
 }
 
 $small: 540px;
 @mixin small {
-    @media (min-width: #{$small}) {
-        @content;
-    }
+  @media (min-width: #{$small}) {
+    @content;
+  }
+}
+
+$medium: 720px;
+@mixin medium {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
 }
 
 $large: 960px;
 @mixin large {
-    @media (min-width: #{$large}) {
-        @content;
-    }
+  @media (min-width: #{$large}) {
+    @content;
+  }
 }
 
 $extra-large: 1140px;
 @mixin extra-large {
-    @media (min-width: #{$extra-large}) {
-        @content;
-    }
+  @media (min-width: #{$extra-large}) {
+    @content;
+  }
 }
-    

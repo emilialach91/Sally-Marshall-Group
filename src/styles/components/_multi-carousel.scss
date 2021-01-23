@@ -1,94 +1,90 @@
 .multiCarousel {
-    background-color: $grey;
-    margin-top: 40px;
+  background-color: $grey;
+  margin-top: 40px;
 
-    &__item {
-        max-width: 280px;
-        height: 400px;
-        border: .5px solid #D6D3E2;
-        background-color: white;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 40px;
-        position: relative;
-        text-align: justify;
+  &__item {
+    max-width: 280px;
+    height: 400px;
+    border: 0.5px solid #d6d3e2;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: justify;
+  }
+
+  &__image {
+    width: 100%;
+    height: 35%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+    &--courses {
+      background-image: url("./images/pexels-photo.jpg");
     }
 
-    &__image {
-        width: 100%;
-        height: 35%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-bottom: 20px;
-
-        &--courses {
-            background-image: url('./images/pexels-photo.jpg');
-        }
-
-        &--book {
-            background-image: url('./images/rawpixel.jpg');
-        }
-        
-        &--steer {
-            background-image: url('./images/maximilian-weisbecker.jpg');
-        }
-        
-        &--board {
-            background-image: url('./images/bay-beach-blue.jpg');
-        }
-        
-        &--tide {
-            background-image: url('./images/yoann-boyer.jpg');
-        }
+    &--book {
+      background-image: url("./images/rawpixel.jpg");
     }
 
-    &__date {
-        width: 130px;
-        height: 25px;
-        text-align: center;
-        background-color: $teal;
-        position: absolute;
-        top: 0;
-        right: calc(50% - 60px);
-        color: $white;
+    &--steer {
+      background-image: url("./images/maximilian-weisbecker.jpg");
     }
 
-    &__title{
-        color: $pink;
-        margin-left: 15px;
+    &--board {
+      background-image: url("./images/bay-beach-blue.jpg");
     }
 
-    &__button {
-        display: block;
-        background-color: $pink;
-        font-weight: 300;
-        font-size: .9rem;
-        color: $white;
-        width: 150px;
-        height: 30px;
-        border: none;
-        position: absolute;
-        bottom: 20px;
-        right: calc(50% - 80px);
+    &--tide {
+      background-image: url("./images/yoann-boyer.jpg");
     }
+  }
+
+  &__date {
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    background-color: $teal;
+    position: absolute;
+    top: 0;
+    right: calc(50% - 60px);
+    color: $white;
+  }
+
+  &__title {
+    color: $pink;
+    margin-left: 15px;
+  }
+
+  &__button {
+    display: block;
+    background-color: $pink;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: $white;
+    width: 150px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    bottom: 20px;
+    right: calc(50% - 80px);
+  }
 }
 .slick-dots li {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .slick-dots li button:before {
-    color: black;
-    opacity: 1;
-    font-size: 13px;
+  color: black;
+  opacity: 1;
+  font-size: 13px;
 }
 .slick-dots li.slick-active button:before {
-    color: $pink;
-    border-radius: 100%;
+  color: $pink;
+  border-radius: 100%;
 }
-
-
-	
-	

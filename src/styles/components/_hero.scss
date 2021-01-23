@@ -1,137 +1,158 @@
 .hero {
-    width: 100%;
-    height: 100vh;
-    background-image: url("./images/frank-mckenna.jpg");
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/frank-mckenna.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__bar {
+    background-color: $pink;
+    height: 30px;
+  }
+
+  &__container {
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__info {
+    display: flex;
+    font-size: 0.7rem;
+    color: $white;
+    margin: auto 15px;
+    cursor: pointer;
+
+    @include small {
+      margin: auto 60px;
+    }
+
+    @include medium {
+      margin: auto 0 auto 150px;
+    }
+
+    &--envelope {
+      @include medium {
+        margin: auto 150px auto 0;
+      }
+    }
+  }
+
+  &__detail {
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  &__logo {
+    width: 180px;
+    height: 100px;
+    background-image: url("./images/Sally Marshall Group Logo.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    margin-right: 15px;
 
-    &__bar {
-        background-color: $pink;
-        height: 30px;
+    @include extra-small {
+      margin: 0 auto;
+      width: 250px;
     }
 
-    &__container {
-        max-width: 1440px;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        // justify-content: space-between;
-        margin: auto;
+    @include small {
+      width: 350px;
     }
 
-    &__info {
-        display: flex;
-        font-size: 0.7rem;
-        flex-direction: row;
-        color: rgb(255, 219, 219);
-        margin: auto 15px;
-        cursor:pointer
+    @include large {
+      width: 550px;
     }
+  }
 
-    &__detail {
-        margin-left: 10px;
-    }
+  &__content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $blue;
+  }
 
-    &__main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 50px;
-    }
-
-    &__logo {
-        width: 180px;
-        height: 100px;
-        background-image: url("./images/Sally Marshall Group Logo.png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-right: 15px;
-
-        @include extra-small {
-            margin: 0 auto;
-            width: 250px;
-        }
-
-        @include small {
-            width: 350px;
-        }
-
-        @include large {
-            width: 550px;
-        }
-    }
-
-    &__content {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: $blue;
-    }
-
-    &__description {
-        margin: 0 10px;
-        max-width: 350px;
-        line-height: 1.9;
-        text-align: center;
-        font-style: italic;
-        font-weight: 300;
-
-    }
-
-   
+  &__description {
+    margin: 0 10px;
+    max-width: 350px;
+    line-height: 1.9;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+  }
 }
 
 .underline {
-    margin: 30px 0;
-    height: 1px;
-    width: 100px;
-    background-color: $blue;
+  margin: 30px 0;
+  height: 1px;
+  width: 100px;
+  background-color: $blue;
 
-    &--info {
-        background-color: $white;
-        margin: 30px auto;
-    }
+  &--info {
+    background-color: $white;
+    margin: 30px auto;
+  }
 
-    &--reverse {
-        background-color: $pink;
-        margin: 30px auto;
-    }
+  &--reverse {
+    background-color: $pink;
+    margin: 30px auto;
+  }
 }
 
-.bounce{
-    font-size: 2rem;
-    color: $grey;
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
+.bounce {
+  font-size: 2rem;
+  color: $grey;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
 }
 
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-  } 
-  
-@-webkit-keyframes bounce {
-  0%, 100% {-webkit-transform: translateY(0);}
-  50% {-webkit-transform: translateY(-7px);}
-} 
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
 
-@keyframes bounce { 
-  0%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-7px);}
-} 
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-7px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}

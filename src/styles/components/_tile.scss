@@ -1,100 +1,103 @@
-.tile{
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto 40px auto;;
-    padding: 0 15px;
+.tile {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 40px auto;
+  padding: 0 15px;
 
-    @include large{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+  @include large {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__container {
+    max-width: 400px;
+    height: 250px;
+    position: relative;
+    margin: 10px;
+
+    &--courses,
+    &--tide {
+      background-color: $blue;
     }
 
-    &__container {
-        max-width: 400px;
-        position: relative;
-        margin: 10px;
-
-        &--courses, &--tide{
-            background-color: $blue;
-        }
-
-        &--book, &--steer{
-            background-color: $teal;
-        }
-
-        &--speaking, &--chat{
-            background-color: $pink;
-        }
-
-        &--courses:before {
-            background-image: url('./images/pexels-photo.jpg');
-        }
-
-        &--book:before {
-            background-image: url('./images/blur-blurred-book.jpg');
-        }
-
-        &--speaking:before {
-            background-image: url('./images/armchairs-blur-business.jpg');
-        }
-
-        &--steer:before {
-            background-image: url('./images/maximilian-weisbecker.jpg');
-        }
-
-        &--chat:before {
-            background-image: url('./images/rawpixel.jpg');
-        }
-
-        &--tide:before {
-            background-image: url('./images/yoann-boyer.jpg');
-        }
-
-        @include extra-large {
-            max-width: 300px;
-        }
+    &--book,
+    &--steer {
+      background-color: $teal;
     }
 
-    &__container:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: 0.2;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    &--speaking,
+    &--chat {
+      background-color: $pink;
     }
 
-    &__title{
-        margin-bottom: 20px;
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin-bottom: 15px;
+    &--courses:before {
+      background-image: url("./images/pexels-photo.jpg");
     }
-    
-    &__logo {
-        margin-bottom: 15px;
-    }
-    
 
-    &__content {
-        color: white;
-        padding: 30px 15px 30px 15px;  
-        font-size: 0.8rem;
-        font-weight: 300;
-        line-height: 1.7;
+    &--book:before {
+      background-image: url("./images/blur-blurred-book.jpg");
     }
-    
-    &__underline {
-        margin-bottom: 20px;
-        height: 1px;
-        width: 40px;
-        background-color: $white;
+
+    &--speaking:before {
+      background-image: url("./images/armchairs-blur-business.jpg");
     }
+
+    &--steer:before {
+      background-image: url("./images/maximilian-weisbecker.jpg");
+    }
+
+    &--chat:before {
+      background-image: url("./images/rawpixel.jpg");
+    }
+
+    &--tide:before {
+      background-image: url("./images/yoann-boyer.jpg");
+    }
+
+    @include extra-large {
+      max-width: 300px;
+    }
+  }
+
+  &__container:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    color: white;
+    padding: 30px 15px 30px 15px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  &__underline {
+    margin-bottom: 20px;
+    height: 1px;
+    width: 40px;
+    background-color: $white;
+  }
 }
