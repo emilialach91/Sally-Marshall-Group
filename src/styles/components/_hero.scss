@@ -75,21 +75,33 @@
     }
 
     &__description {
-        margin: 30px 10px 0 10px;
+        margin: 0 10px;
         max-width: 350px;
         line-height: 1.9;
         text-align: center;
         font-style: italic;
+        font-weight: 300;
+
     }
 
    
 }
 
 .underline {
-    margin-top: 30px;
+    margin: 30px 0;
     height: 1px;
     width: 100px;
     background-color: $blue;
+
+    &--info {
+        background-color: $white;
+        margin: 30px auto;
+    }
+
+    &--reverse {
+        background-color: $pink;
+
+    }
 }
 
 .bounce{

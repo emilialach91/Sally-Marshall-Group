@@ -1,0 +1,51 @@
+.info {
+    position: relative;
+    background: #359EBC;
+    overflow: hidden;
+    color: $white;
+
+        &--reverse {
+            background: $grey;
+            color: $pink;
+        }
+    
+    &__content {
+        position: relative;
+        z-index: 5;
+        max-width: 650px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    &__title {
+       font-weight: 400; 
+       letter-spacing: 1px;
+    }
+
+    &__description {
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.6;
+        margin: 0 15px;
+
+        &--extra {
+            font-style: normal;
+            font-size: 0.8rem;
+        }
+    }
+    
+}
+
+.info:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.08;
+    background-image: url('./images/Star.svg');
+    background-repeat: no-repeat;
+    background-position: 120% 0;
+    background-size: contain;
+}
