@@ -19,31 +19,12 @@ button.addEventListener('click', function () {
 
 $('.multiCarousel__content').slick({
     centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 4,
+    centerPadding: '100px',
+    slidesToShow: 3,
     arrows: false,
     dots: true,
     autoplay: true,
     responsive: [
-      {
-        breakpoint: 960,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3,
-        }
-      },
-
-      {
-        breakpoint: 720,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2,
-        }
-      },
       {
         breakpoint: 540,
         settings: {
