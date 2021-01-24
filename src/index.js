@@ -26,12 +26,30 @@ $('.multiCarousel__content').slick({
     autoplay: true,
     responsive: [
       {
-        breakpoint: 540,
+        breakpoint: 850,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '150px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '100px',
+          slidesToShow: 1
+        }
+      }, 
+      {
+        breakpoint: 500,
         settings: {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1,
+          slidesToShow: 1
         }
       }
     ]
