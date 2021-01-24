@@ -729,6 +729,7 @@ html {
   -webkit-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
   font-weight: 300;
+  outline: none;
 }
 
 @media (min-width: 720px) {
@@ -744,18 +745,17 @@ html {
 }
 
 .checkbox__alert {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .checkbox__label {
   position: relative;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .checkbox__content {
   display: block;
-  margin-bottom: 5px;
 }
 
 .checkbox__input {
@@ -784,7 +784,7 @@ html {
   content: '';
   display: block;
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 4px;
   width: 6px;
   height: 8px;

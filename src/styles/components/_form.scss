@@ -36,6 +36,7 @@
         width: 150px;
         transition: ease-in-out .2s;
         font-weight: 300;
+        outline: none;
     }
 
     @include medium {
@@ -51,18 +52,18 @@
     margin: 30px 0;
 
     &__alert {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     &__label {
         position: relative;
         cursor: pointer;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     &__content {
         display: block;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
     }
 
     &__input {
@@ -94,7 +95,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 6px;
+    top: 4px;
     left: 4px;
     width: 6px;
     height: 8px;
