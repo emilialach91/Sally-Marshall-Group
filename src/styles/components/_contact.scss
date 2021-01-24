@@ -1,0 +1,42 @@
+.contact {
+    background-color: $pink;
+
+    &__content {
+        padding: 40px 15px;
+        margin: 40px auto;
+        color: $white;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    &__address {
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.6;
+        font-size: 0.9rem
+    }
+
+    &__detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin: 10px 0;
+    }
+
+    &__link {
+        margin: auto 0 auto 15px;
+    }
+
+     &__icon {
+        margin: auto 0;
+     }
+
+}
+
