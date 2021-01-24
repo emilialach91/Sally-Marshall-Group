@@ -73,8 +73,16 @@
       width: 350px;
     }
 
+    @include medium {
+      width: 400px;
+    }
+
     @include large {
-      width: 550px;
+      width: 500px;
+    }
+
+    @include extra-large {
+      width: 600px;
     }
   }
 
