@@ -801,4 +801,26 @@ html {
   height: 500px;
   background-color: grey;
 }
+
+.media {
+  background-color: #329bb9;
+  height: 80px;
+}
+
+.media__content {
+  margin: auto;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.media__icon {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
