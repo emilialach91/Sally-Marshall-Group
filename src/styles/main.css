@@ -794,4 +794,11 @@ html {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+#map {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+  background-color: grey;
+}
 /*# sourceMappingURL=main.css.map */
