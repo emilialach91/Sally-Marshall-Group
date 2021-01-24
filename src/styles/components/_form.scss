@@ -2,8 +2,9 @@
     padding: 40px 0;
 
     &__container {
-        width: 450px;
+        max-width: 500px;
         margin: 0 auto;
+        padding: 0 15px;
     }
 
     &__topic {
@@ -63,7 +64,6 @@
 
     &__content {
         display: block;
-        // margin-bottom: 5px;
     }
 
     &__input {
