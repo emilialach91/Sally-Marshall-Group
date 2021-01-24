@@ -691,6 +691,7 @@ html {
 
 .form {
   padding: 40px 0;
+  background-color: #f4f4f4;
 }
 
 .form__container {
@@ -822,5 +823,98 @@ html {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+}
+
+.footer {
+  background-color: #f4f4f4;
+}
+
+.footer__content {
+  max-width: 1440px;
+  padding: 40px 15px;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 960px) {
+  .footer__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  color: black;
+}
+
+@media (min-width: 960px) {
+  .footer__link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer__detail {
+  margin: 0;
+}
+
+.footer__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item {
+  margin-left: 10px;
+  color: black;
+}
+
+.footer__item--website {
+  color: #aa108c;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.footer__item:hover {
+  text-decoration: none;
+  color: #aa108c;
+}
+
+.footer__item--website:hover {
+  text-decoration: none;
+  color: #329bb9;
 }
 /*# sourceMappingURL=main.css.map */
