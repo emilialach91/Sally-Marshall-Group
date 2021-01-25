@@ -800,7 +800,11 @@ html {
   width: 100%;
   margin: auto;
   height: 500px;
-  background-color: grey;
+  border: 0.5px solid #a3a1a1;
+}
+
+.map {
+  background-color: #f4f4f4;
 }
 
 .media {
@@ -831,6 +835,7 @@ html {
 
 .footer__content {
   max-width: 1440px;
+  margin: 0 auto;
   padding: 40px 15px;
   font-size: 0.8rem;
   display: -webkit-box;
