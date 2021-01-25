@@ -1,8 +1,6 @@
 .info {
-  // position: relative;
   background: #359ebc;
   overflow: hidden;
-
 
   &--reverse {
     background: $grey;
@@ -50,7 +48,6 @@
 }
 
 // star background
-
 .info__star:before{
     content: ' ';
     display: block;
