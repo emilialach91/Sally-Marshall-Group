@@ -1,6 +1,5 @@
 import './styles/main.scss';
 
-
 const element = document.querySelector('.info');
 const button = document.querySelector('.bounce');
 const menu = document.querySelector('.menu__hamburger');
@@ -55,9 +54,6 @@ $('.multiCarousel__content').slick({
     ]
   });
 
-
-  
-  
  function init_google_map(map_coords, map_type) {
   var styleArray = [
     {
@@ -158,7 +154,6 @@ $('.multiCarousel__content').slick({
                 "lightness": 21
             }
         ]
-
     },
     {
       "featureType": "road.highway",
@@ -171,7 +166,6 @@ $('.multiCarousel__content').slick({
                 "lightness": 17
             }
         ]
-
     },
     {
       "featureType": "road.highway",
@@ -235,7 +229,6 @@ $('.multiCarousel__content').slick({
                 "lightness": 17
             }
         ]
-
     }
   ];
 
