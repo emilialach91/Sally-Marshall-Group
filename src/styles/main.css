@@ -89,7 +89,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .hero__logo {
@@ -150,6 +150,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   color: #012d6a;
+  margin: 20px 15px 0 15px;
 }
 
 .hero__description {
@@ -251,17 +252,12 @@ html {
   z-index: 50;
   position: absolute;
   left: 15px;
+  top: 90px;
 }
 
 @media (min-width: 720px) {
   .menu__symbol {
-    left: 60px;
-  }
-}
-
-@media (min-width: 960px) {
-  .menu__symbol {
-    left: 250px;
+    left: 70px;
   }
 }
 
@@ -349,7 +345,6 @@ html {
 }
 
 .info {
-  position: relative;
   background: #359ebc;
   overflow: hidden;
 }
@@ -394,6 +389,44 @@ html {
   margin: 0 15px;
 }
 
+.info__star {
+  position: relative;
+}
+
+.info__star:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.09;
+  background-image: url("./images/Star.svg");
+  background-repeat: no-repeat;
+  background-position: 105% -10%;
+  background-size: contain;
+}
+
+.info__star--reverse:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-image: url("./images/Star.svg");
+  background-repeat: no-repeat;
+  background-position: -10% -10%;
+  background-size: contain;
+}
+
+@media (min-width: 720px) {
+  .info__star--reverse:before {
+    background-size: 30%;
+  }
+}
+
 .tile {
   max-width: 1200px;
   display: -webkit-box;
@@ -429,6 +462,7 @@ html {
   height: 250px;
   position: relative;
   margin: 10px;
+  z-index: 3;
 }
 
 .tile__container--courses, .tile__container--tide {
@@ -479,7 +513,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   opacity: 0.2;
   background-repeat: no-repeat;
   background-position: center;
@@ -652,7 +686,6 @@ html {
   top: 0;
   height: 100%;
   pointer-events: none;
-  /*makes the linkes behind clickable*/
 }
 
 .multiCarousel:before {

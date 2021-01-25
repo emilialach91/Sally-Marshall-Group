@@ -1,7 +1,8 @@
 .info {
-  position: relative;
+  // position: relative;
   background: #359ebc;
   overflow: hidden;
+
 
   &--reverse {
     background: $grey;
@@ -42,20 +43,44 @@
       margin: 0 15px;
     }
   }
+
+  &__star {
+    position: relative;
+  }
 }
 
 // star background
 
-// .info:before {
-//     content: ' ';
-//     display: block;
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     z-index: 1;
-//     opacity: 0.08;
-//     background-image: url('./images/Star.svg');
-//     background-repeat: no-repeat;
-//     background-position: 100% 0;
-//     background-size: contain;
-// }
+.info__star:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.09;
+    background-image: url('./images/Star.svg');
+    background-repeat: no-repeat;
+    background-position: 105% -10%;
+    background-size: contain;
+}
+
+.info__star--reverse:before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1 ;
+  opacity: 0.8;
+  background-image: url('./images/Star.svg');
+  background-repeat: no-repeat;
+  background-position: -10% -10%;
+  background-size: contain;
+}
+
+@include medium {
+  .info__star--reverse:before {
+    background-size: 30%;
+  }
+}

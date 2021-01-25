@@ -16,14 +16,11 @@
         z-index: 50;
         position: absolute;
         left: 15px;
+        top: 90px;
 
         @include medium {
-           left: 60px;
-        }
-
-        @include large {
-          left: 250px;
-       }
+           left: 70px;
+        }   
     }
 
     &__navbar {
