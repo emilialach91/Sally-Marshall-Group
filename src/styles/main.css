@@ -530,6 +530,17 @@ html {
 
 .tile__logo {
   margin-bottom: 15px;
+  width: 120px;
+  height: 30px;
+  background-image: url("./images/Logos/Steer-Your-Business-Logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tile__logo--tide {
+  width: 150px;
+  background-image: url("./images/Logos/Reverse-The-Tide-Logo.svg");
 }
 
 .tile__content {
